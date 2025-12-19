@@ -1,0 +1,4 @@
+name: DashTools
+version: '0.1'
+main: net.SkyBuilder1717.dashTools.DashTools
+api-version: '1.21'
