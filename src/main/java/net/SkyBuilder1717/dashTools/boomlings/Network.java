@@ -23,7 +23,7 @@ public class Network {
         }, 1, 1, TimeUnit.MINUTES);
     }
 
-    public static CompletableFuture<String> sendRequest(String endpoint, String params, String secret) {
+    private static CompletableFuture<String> sendRequest(String endpoint, String params, String secret) {
         try {
             RATE_SEMAPHORE.acquire();
         } catch (InterruptedException e) {
